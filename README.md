@@ -68,6 +68,10 @@ requests are squash-merged, so the title is the commit message release-please re
 release-please's defaults, listed in `.github/commit-types.txt`. The title workflow holds a copy of the list in its
 regex, and `.github/scripts/check-commit-types.sh` fails if the two drift apart.
 
+The Rust toolchain version is set in `rust-toolchain.toml` (the source of truth), `mise.toml`, `rust-ci.yml` and
+`cargo-deny.yml`, with `rust-version` in `Cargo.toml` as its major.minor. Change them together:
+`.github/scripts/check-toolchain-version.sh` runs in `rust-ci.yml` and fails if they differ.
+
 ## History
 
 Extracted from [pantheon-org/tekhne](https://github.com/pantheon-org/tekhne) with `git filter-repo`
