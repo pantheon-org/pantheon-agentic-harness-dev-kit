@@ -1,5 +1,3 @@
-version: 2
-
 # Keeps Cargo dependencies and the SHA-pinned GitHub Actions current. Minor and
 # patch bumps are grouped into one weekly PR per ecosystem to cut review noise;
 # major bumps are raised individually so breaking changes are reviewed alone.
@@ -8,52 +6,63 @@ version: 2
 # Cargo caveat: the pantheon-agentic-harness-dev-kit crates are git dependencies
 # pinned by tag in Cargo.toml. Dependabot does not reliably move a git tag, so
 # bump that tag by hand when the dev-kit cuts a release.
-
+version: 2
 updates:
-  - package-ecosystem: "cargo"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 5
-    # Wait 7 days after a release before opening an update PR, so a yanked or
-    # compromised release has time to surface before we adopt it.
-    cooldown:
-      default-days: 7
-    labels:
-      - "dependencies"
-      - "rust"
-    commit-message:
-      prefix: "chore"
-      prefix-development: "chore"
-      include: "scope"
-    groups:
-      cargo-minor-patch:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
-
-  # Keeps the SHA pins in .github/workflows current.
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 5
-    cooldown:
-      default-days: 7
-    labels:
-      - "dependencies"
-      - "github-actions"
-    commit-message:
-      prefix: "ci"
-      include: "scope"
-    groups:
-      actions-minor-patch:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
+- package-ecosystem: cargo
+  directory: /
+  schedule:
+    interval: weekly
+    day: monday
+  open-pull-requests-limit: 5
+  cooldown:
+    default-days: 7
+  labels:
+  - dependencies
+  - rust
+  commit-message:
+    prefix: chore
+    prefix-development: chore
+    include: scope
+  groups:
+    cargo-minor-patch:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: weekly
+    day: monday
+  open-pull-requests-limit: 5
+  cooldown:
+    default-days: 7
+  exclude-paths:
+  - .github/workflows/plumber.yml
+  - .github/workflows/sync-labels.yml
+  - .github/workflows/pr-auto-rebase.yml
+  - .github/workflows/release-automerge.yml
+  - .github/workflows/commit-types.yml
+  - .github/workflows/conventional-commits.yml
+  - .github/workflows/release-please.yml
+  - .github/workflows/zizmor.yml
+  - .github/workflows/agnix.yml
+  - .github/workflows/aislop.yml
+  - .github/workflows/rust-ci.yml
+  - .github/workflows/cargo-deny.yml
+  - .github/workflows/inline-scripts.yml
+  - .github/workflows/scaffold-check.yml
+  labels:
+  - dependencies
+  - github-actions
+  commit-message:
+    prefix: ci
+    include: scope
+  groups:
+    actions-minor-patch:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
