@@ -1,7 +1,7 @@
 // Written by `pantheon-scaffold init`. From here on `pantheon-scaffold upgrade` edits the amends line and the imports of the package, and everything else is yours.
-amends "package://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.0/pantheon-scaffold@0.4.0::sha256:4de43443d70aeda90bda64ded410bdaa504b006d4defe6168fb5356bec16e450#/Config.pkl"
+amends "package://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.1/pantheon-scaffold@0.4.1::sha256:24b26cdafc9c35cb60c334d6226596ed6f9fce2a98699a66f13baa2826f79781#/Config.pkl"
 
-import "package://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.0/pantheon-scaffold@0.4.0::sha256:4de43443d70aeda90bda64ded410bdaa504b006d4defe6168fb5356bec16e450#/Builtins.pkl"
+import "package://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.1/pantheon-scaffold@0.4.1::sha256:24b26cdafc9c35cb60c334d6226596ed6f9fce2a98699a66f13baa2826f79781#/Builtins.pkl"
 
 options {
   toolchain = "1.96.1"
