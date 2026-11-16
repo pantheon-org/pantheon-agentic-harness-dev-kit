@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "packageVersion": "0.4.0",
+  "packageVersion": "0.4.1",
   "files": {
     ".agnix.toml": {
       "class": "owned",
@@ -20,7 +20,7 @@
     },
     ".github/dependabot.yml": {
       "class": "owned",
-      "hash": "bfbaab5046637176e7e15faebc5275f83d365104d8b7edf7afb91e9f97e581e8"
+      "hash": "7593ccc890558d17f582f24b9e21599baf5515a60fe85d9a1243064195a1cf49"
     },
     ".github/labels.txt": {
       "class": "owned",
@@ -167,7 +167,7 @@
     },
     "mise.toml": {
       "class": "owned",
-      "hash": "f6232d2ed4f0e10d0c65634e564b570519ef53e049da9917b820450242492411"
+      "hash": "b92e4ef95fcbb3a1fa6f7ca8d0145bd473b3b5035567dca93d2b13c9eb4adcfa"
     },
     "release-please-config.json": {
       "class": "seed",

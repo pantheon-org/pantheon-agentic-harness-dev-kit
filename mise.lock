@@ -49,26 +49,26 @@ url_api = "https://api.github.com/repos/agent-sh/agnix/releases/assets/615860121
 provenance = "github-attestations"
 
 [[tools."github:pantheon-org/pantheon-scaffold"]]
-version = "0.4.0"
+version = "0.4.1"
 backend = "github:pantheon-org/pantheon-scaffold"
-specifiers = ["0.4.0"]
+specifiers = ["0.4.1"]
 
 [tools."github:pantheon-org/pantheon-scaffold"."platforms.linux-arm64"]
-checksum = "sha256:1f32b46649f5ef4fa33181bc9b925b6693f0880c24aca77053633f6fa58df8a0"
-url = "https://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.0/pantheon-scaffold-linux-arm64"
-url_api = "https://api.github.com/repos/pantheon-org/pantheon-scaffold/releases/assets/752509662"
+checksum = "sha256:5953079b8645082f127edcb820f2d44c19b7a00bd578ed85b3a655dfb7580171"
+url = "https://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.1/pantheon-scaffold-linux-arm64"
+url_api = "https://api.github.com/repos/pantheon-org/pantheon-scaffold/releases/assets/753692389"
 provenance = "github-attestations"
 
 [tools."github:pantheon-org/pantheon-scaffold"."platforms.linux-x64"]
-checksum = "sha256:7e8c44a42d879f6c7c3c8a046339e7442520c87da5f5e2cc1b07023de885596d"
-url = "https://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.0/pantheon-scaffold-linux-x64"
-url_api = "https://api.github.com/repos/pantheon-org/pantheon-scaffold/releases/assets/752509660"
+checksum = "sha256:d3b649786e2ba54fc3b2dc2df0c73a61837b884d5314ee9ea414fda59ba079e2"
+url = "https://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.1/pantheon-scaffold-linux-x64"
+url_api = "https://api.github.com/repos/pantheon-org/pantheon-scaffold/releases/assets/753692388"
 provenance = "github-attestations"
 
 [tools."github:pantheon-org/pantheon-scaffold"."platforms.macos-arm64"]
-checksum = "sha256:12977d7a2747c070e3a1f1d6a2acbd1d7c3c7cfec2280aa74c623924ec346b8b"
-url = "https://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.0/pantheon-scaffold-darwin-arm64"
-url_api = "https://api.github.com/repos/pantheon-org/pantheon-scaffold/releases/assets/752509667"
+checksum = "sha256:006b689cb33a56fd548f21bfb48b96857e4af06d4d9a842d76c125f3dd10ed15"
+url = "https://github.com/pantheon-org/pantheon-scaffold/releases/download/v0.4.1/pantheon-scaffold-darwin-arm64"
+url_api = "https://api.github.com/repos/pantheon-org/pantheon-scaffold/releases/assets/753692392"
 provenance = "github-attestations"
 
 [[tools.hk]]
